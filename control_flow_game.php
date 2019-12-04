@@ -54,7 +54,7 @@ while($winner != true) {
 				echo "Great!\n";
 				break;
 			case "no":
-				echo "Bye-Bye";
+				echo "Bye-bye\n";
 				exit;
 			default:
 				echo "Invalid Grade";
