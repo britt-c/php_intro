@@ -9,10 +9,11 @@ while($winner != true) {
 
  $my_number = rand(0, 9);
  $your_number = rtrim(fgets(STDIN));
- echo "My number: " .  $my_number . "\n";
- echo "Your number: " . $your_number . "\n";
+ 
  if (is_numeric($your_number) != true){
-	echo "INVALID ENTRY\n";
+	echo "Ew... don't be annoying!\n";
+	echo "Enter a valid number!\n";
+	
  } elseif ($your_number <= 9 && $your_number >= 0) {
 	if ($my_number < $your_number) {
 	 echo "You cheated!!\n";
@@ -22,7 +23,7 @@ while($winner != true) {
 	 $winner = true; 
 	} elseif ($my_number > $your_number) {
 		echo "I win because my number was " . $my_number . "!\n";
-		echo "And your number was " . $your_number . "!\n";
+		echo "And your number was only " . $your_number . "!\n";
 		echo "And in this game...bigger is better.\n";
 	  exit;
 	}
