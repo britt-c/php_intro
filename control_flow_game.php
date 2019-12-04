@@ -57,7 +57,7 @@ while($winner != true) {
 				echo "Bye-bye\n";
 				exit;
 			default:
-				echo "Invalid Grade";
+				echo "Invalid Entry";
 				exit;
 		}
 	} elseif ($my_number > $your_number) {
