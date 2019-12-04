@@ -44,7 +44,18 @@ while($winner != true) {
 		echo "My number was " . $my_number . " too!!\n";
 		echo "Twinsies!!👯\n";
 		echo "✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨\n";
-		$winner = true; 
+		echo "\n";
+		echo "Want to play again?\n";
+		echo "Yes/no?\n";
+		$answer = rtrim(fgets(STDIN));
+		 switch ($answer) {
+			case "yes":
+				echo "Great!\n";
+				break;
+			case "no":
+				echo "Bye-Bye";
+				exit;
+		}
 	} elseif ($my_number > $your_number) {
 	  echo "\n";	
 		echo "🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇\n";
