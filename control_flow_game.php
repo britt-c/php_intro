@@ -46,25 +46,30 @@ while($winner != true) {
 		echo "✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨\n";
 		echo "\n";
 		echo "Want to play again?\n";
-		echo "Yes/no?\n";
+		echo "Yes/No?\n";
 		$answer = rtrim(fgets(STDIN));
-		 switch ($answer) {
+		$result = strtolower($answer);
+			 switch ($result) {
 			case "yes":
 				echo "Great!\n";
 				break;
 			case "no":
 				echo "Bye-Bye";
 				exit;
+			default:
+				echo "Invalid Grade";
+				exit;
 		}
 	} elseif ($my_number > $your_number) {
 	  echo "\n";	
-		echo "🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇\n";
-	  echo "\n";	
+		echo "🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇\n";	
 		echo "I win because my number was " . $my_number . "!\n";
 		echo "And your number was only " . $your_number . "!\n";
 		echo "And in this game...BIGGER is better.\n";
 		echo "\n";
 		echo "No hard feelings. Bye, " . strtoupper($player) . "!\n";
+		echo "\n";
+	  echo "\n";
 		echo "\n";
 		echo "☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️ ☠️  \n";
 		echo "☹️ ☹️ ☹️ 😢 " . strtoupper($player) . " IS A LOSER 😢☹️ ☹️ ☹️ \n";
